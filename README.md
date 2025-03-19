@@ -1,164 +1,94 @@
-[简体中文](https://github.com/hugetiny/FreeVPN/blob/master/READMECN.md)
+[![简体中文](https://img.shields.io/badge/语言-简体中文-red)](README_CN.md)
+[![English](https://img.shields.io/badge/Language-English-red)](README.md)
+[![العربية](https://img.shields.io/badge/اللغة-العربية-red)](README_AR.md)
+[![বাংলা](https://img.shields.io/badge/ভাষা-বাংলা-red)](README_BN.md)
+[![Deutsch](https://img.shields.io/badge/Sprache-Deutsch-red)](README_DE.md)
+[![Español](https://img.shields.io/badge/Idioma-Español-red)](README_ES.md)
+[![فارسی](https://img.shields.io/badge/زبان-فارسی-red)](README_FA.md)
+[![Français](https://img.shields.io/badge/Langue-Français-red)](README_FR.md)
+[![हिन्दी](https://img.shields.io/badge/भाषा-हिन्दी-red)](README_HI.md)
+[![Bahasa Indonesia](https://img.shields.io/badge/Bahasa-Indonesia-red)](README_ID.md)
+[![Italiano](https://img.shields.io/badge/Lingua-Italiano-red)](README_IT.md)
+[![日本語](https://img.shields.io/badge/言語-日本語-red)](README_JA.md)
+[![한국어](https://img.shields.io/badge/언어-한국어-red)](README_KO.md)
+[![Polski](https://img.shields.io/badge/Język-Polski-red)](README_PL.md)
+[![Português](https://img.shields.io/badge/Língua-Português-red)](README_PT.md)
+[![Русский](https://img.shields.io/badge/Язык-Русский-red)](README_RU.md)
+[![ไทย](https://img.shields.io/badge/ภาษา-ไทย-red)](README_TH.md)
+[![Türkçe](https://img.shields.io/badge/Dil-Türkçe-red)](README_TR.md)
+[![اردو](https://img.shields.io/badge/زبان-اردو-red)](README_UR.md)
+[![Tiếng Việt](https://img.shields.io/badge/Ngôn%20ngữ-Tiếng%20Việt-red)](README_VI.md)
 
-|  VPN/proxy  | Android | iOS | Win  | Mac | Linux |
-|  ----  | ----  | ---- | ----  | ---- | ---- |
-| XX-net | [Xndroid](https://github.com/XndroidDev/Xndroid/releases/download/1.3.2/app-release.apk)  | |[XX-Net](https://github.com/XX-net/XX-Net/releases/download/4.5.2/XX-Net-general-4.5.2.7z)  |[XX-Net](https://github.com/XX-net/XX-Net/releases/download/4.5.2/XX-Net-general-4.5.2.7z)  |[XX-Net](https://github.com/XX-net/XX-Net/releases/download/4.5.2/XX-Net-general-4.5.2.7z) |
-| v2ray  | [v2rayNG](https://github.com/2dust/v2rayNG/releases/download/1.3.3/v2rayNG_1.3.3.apk) |[shadowrocket](https://lueyingpro.github.io/shadowrocket/index.html) | [v2rayN](https://github.com/2dust/v2rayN/releases/download/3.23/v2rayN-Core.zip) | [V2rayU](https://github.com/yanue/V2rayU/releases/download/2.3.1/V2rayU.dmg) ||
-| trojan  | [igniter](https://github.com/trojan-gfw/igniter/releases/download/v0.9.9-beta/io.github.trojan_gfw.igniter-v0.9.9-beta-230000909-debug.apk) | [shadowrocket](https://lueyingpro.github.io/shadowrocket/index.html) | [v2rayN](https://github.com/2dust/v2rayN/releases/download/3.23/v2rayN-Core.zip) |||
-| [shadowsocks](https://shadowsocks.org/en/download/clients.html)  |[shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android/releases/download/v5.1.3/shadowsocks--universal-5.1.3.apk) |  [Big Boss](http://apt.thebigboss.org/onepackage.php?bundleid=com.linusyang.shadowsocks) | [shadowsocks-windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.1.10.0/Shadowsocks-4.1.10.0.zip) | [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip) |[Shadowsocks-Qt5](https://github.com/shadowsocks/shadowsocks-qt5/releases/download/v3.0.1/Shadowsocks-Qt5-3.0.1-x86_64.AppImage)
-| psiphon  |[psiphon](https://www.psiphon3.com/PsiphonAndroid.apk)||[psiphon](https://www.psiphon3.com/psiphon3.exe)|
-| lantern |[Github installer](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.apk) [S3 installer](https://s3.amazonaws.com/lantern/lantern-installer.apk) | |[Github installer](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.exe) [S3 installer](https://s3.amazonaws.com/lantern/lantern-installer.exe)|[Github installer](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.dmg) [S3 installer](https://s3.amazonaws.com/lantern/lantern-installer.dmg)|[32bit installer](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-32-bit.deb) [64bit installer](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-64-bit.deb)|
+## 🚀 Quick Start
 
-##### V2RAY
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImh0dHBzOi8vZ2l0aHViLmNvbS9BbHZpbjk5OTkvbmV3LXBhYy93aWtpLyIsDQogICJhZGQiOiAid3d3LmZyZWU2NjY2Lm5ldCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIyMzQxMDU3NC0zNjI5LTQwZWYtYjVlYi03MDAzY2VjNjI3NWIiLA0KICAiYWlkIjogIjIiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInd3dy5mcmVlNjY2Ni5uZXQiLA0KICAicGF0aCI6ICIvNDZhZWZhMmUvIiwNCiAgInRscyI6ICJ0bHMiDQp9
+1. Search and install [open source clients](https://github.com/awesome-vpn/awesome-vpn/wiki/Clients) on Github
+2. Copy the subscription link below to the client
+3. Select the appropriate node to start using
 
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIltmcmVlLXNzLnNpdGVdd3d3Lmtlcm5lbHMuYmlkIiwNCiAgImFkZCI6ICJ3d3cua2VybmVscy5iaWQiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiM2U0OTJhZWQtZTk1Ni1jNTE5LTkwODktOTk5NWI0MjYxMTlkIiwNCiAgImFpZCI6ICIwIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvd3MiLA0KICAidGxzIjogInRscyINCn0=
+Project link:
+- [https://github.com/awesome-vpn/awesome-vpn](https://github.com/awesome-vpn/awesome-vpn)
 
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIltmcmVlLXNzLnNpdGVdd3d3Lmtlcm5lbHMuYmlkIiwNCiAgImFkZCI6ICJ3d3cua2VybmVscy5iaWQiLA0KICAicG9ydCI6ICI4MCIsDQogICJpZCI6ICJhMGQzZTQyOC05MzE5LTI1YmItN2U1OC1iMjViNDE4M2U5NjEiLA0KICAiYWlkIjogIjAiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi93cyIsDQogICJ0bHMiOiAibm9uZSINCn0=
+## 📥 Subscription Links
 
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImh1aWR1a29uZ2ppYW4taDEiLA0KICAiYWRkIjogImgxLmh1aWR1a29uZ2ppYW4uY29tIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjFlNmY5NjJlLWNkMGUtNGQxYi04OGUyLTZlYjYxOGQ2NTYxNCIsDQogICJhaWQiOiAiNjQiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi92MnJheSIsDQogICJ0bHMiOiAidGxzIg0KfQ==
+Main subscription link:
+- https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all
 
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImh1aWR1a29uZ2ppYW4taDIiLA0KICAiYWRkIjogImgyLmh1aWR1a29uZ2ppYW4uY29tIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM2MGZkYTVmLTE5YmUtNGMwYy1hYzQ2LWFmN2UwYjBkZDkyMSIsDQogICJhaWQiOiAiNjQiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi9ldGMvbmdpbngvaHRtbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==
+Mirror links (use if GitHub is unstable):
+- https://raw.kkgithub.com/awesome-vpn/awesome-vpn/master/all [Preferred: Hong Kong/Japan/Singapore]
+- https://ghp.ci/https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all [Preferred: Japan/Korea/USA/Europe]
+- https://ghproxy.net/https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all [Preferred: Japan]
 
-##### SS
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANTAuNy4xMi4xNDc6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTYyLjIyMC41MS41ODo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANjkuMzYuMTgyLjUyOjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTYyLjIyMC41MS41ODo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTkyLjI0MC4xMjMuMjY6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANTAuNy4xMi4xNDc6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANjkuMzYuMTgyLjUyOjgwOTc=
-ss://YWVzLTI1Ni1jZmI6c0VzY1BCaUFEOUskJkA3OUA5NC4xMDIuNTcuMTYzOjExNzA4
-ss://YWVzLTI1Ni1jdHI6YWE1MjAwMjUxMzE0QDQzLjIyNS4xMDAuNjM6NTIzMDA=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANjkuMzAuMjAxLjgyOjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMjEyLjg0LjE2OS43ODo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMjEyLjg0LjE2OS43ODo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANjkuMzAuMjAxLjgyOjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTM5LjE2Mi4xNS40NTo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNS4yMTUuMjMyOjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTA0LjIzNy4xNTQuMjA0OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNS4yMTUuMjMyOjgwOTk=
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4yMi5ib29tLnBhcnR5OjMyMjAw
-ss://bm9uZTpodHRwOi8vdC5jbi9FR0pJeXJsQHNzci0wNC5zc3JzdWIueHl6Ojg4ODk=
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4xMTAuYm9vbS5wYXJ0eToyMjAwMA==
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG43My5ib29tLnBhcnR5OjE1MDAw
-ss://Y2hhY2hhMjA6bWJsYW5rMXBvcnRAaW5kLWF3cy51dHVyYm8ueHl6OjQ0Mw==
-ss://cmM0LW1kNTpDc2t3NmRANDYuMTcuNDYuMTAxOjE0NDA1
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4wNS5ib29tLnBhcnR5OjMwMDAw
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTkyLjI0MC4xMjMuMjY6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTM5LjE2Mi4xNS40NTo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTkyLjI0MC45OS4xODI6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNS4xOTIuMTM1OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTA0LjIzNy4xNTQuMjA0OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4yNS5ib29tLnBhcnR5OjE1MDAw
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4xMC5ib29tLnBhcnR5OjEwMDAw
-ss://YWVzLTI1Ni1jZmI6VWs5MkNTQG4zNy5ib29tLnBhcnR5OjMzMzAw
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xNjEuNTQ6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xNjEuNTQ6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC45OS4yMTA6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC45OS4yMTA6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTM5LjE2Mi4zOC40Mjo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTM5LjE2Mi4zOC40Mjo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC41MC4xMDI6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNS4xOTIuMTM1OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTkyLjI0MC45OS4xODI6ODA5OQ==
-ss://bm9uZTpodHRwOi8vdC5jbi9FR0pJeXJsQHNzci0wNS5zc3JzdWIueHl6Ojg4ODk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTYuMTA0OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTA0LjIzNy4xNTQuMjA0OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTYuMTA0OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTYuMTA0OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTYuMTA0OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTAuNjY6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTAuNjY6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTAuNjY6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuNzkuOTAuNjY6ODA5Nw==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuMzMuMTA0LjE2Mjo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuMzMuMTA0LjE2Mjo4MDk5
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuMzMuMTA0LjE2Mjo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERANDUuMzMuMTA0LjE2Mjo4MDk3
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xMjcuMjA4OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xMjcuMjA4OjgwOTk=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xMjcuMjA4OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC4xMjcuMjA4OjgwOTc=
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC41MC4xMDI6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC41MC4xMDI6ODA5OQ==
-ss://YWVzLTI1Ni1jZmI6ZUlXMERuazY5NDU0ZTZuU3d1c3B2OURtUzIwMXRRMERAMTcyLjEwNC41MC4xMDI6ODA5Nw==
+## 📊 VPN and Proxy Protocol Analysis
 
-##### SSR
-ssr://NTAuNy4xMi4xNDc6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VXM3RPaWx2eTFUWVc4Z1VHRjFiRzgmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTYyLjIyMC41MS41ODo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTMUJjbWw2YjI1aCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NjkuMzYuMTgyLjUyOjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbmlybmt1NWJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTYyLjIyMC41MS41ODo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTMUJjbWw2YjI1aCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTkyLjI0MC4xMjMuMjY6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NTAuNy4xMi4xNDc6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VXM3RPaWx2eTFUWVc4Z1VHRjFiRzgmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NjkuMzYuMTgyLjUyOjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbmlybmt1NWJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://OTQuMTAyLjU3LjE2MzoxMTcwODpvcmlnaW46YWVzLTI1Ni1jZmI6aHR0cF9zaW1wbGU6YzBWelkxQkNhVUZFT1Vza0prQTNPUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VpTnQtV0ZzQzFPYjNKMGFDQkliMnhzWVc1ayZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NDMuMjI1LjEwMC42Mzo1MjMwMDpvcmlnaW46YWVzLTI1Ni1jdHI6cGxhaW46WVdFMU1qQXdNalV4TXpFMC8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VtbW1lYTRyeTFVYzNWbGJpQlhZVzRnUkdsemRISnBZM1EmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NjkuMzAuMjAxLjgyOjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbHI0Ym9pNF9waDR6bHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MjEyLjg0LjE2OS43ODo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWlMc2VXYnZTM29pNF9tb0x6bGhiQSZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MjEyLjg0LjE2OS43ODo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWlMc2VXYnZTM29pNF9tb0x6bGhiQSZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NjkuMzAuMjAxLjgyOjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbHI0Ym9pNF9waDR6bHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTM5LjE2Mi4xNS40NTo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWFXc09XS29PV2RvUzAmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTcyLjEwNS4yMTUuMjMyOjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTA0LjIzNy4xNTQuMjA0OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNS4yMTUuMjMyOjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://bjIyLmJvb20ucGFydHk6MzIyMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM292cjNscm9FJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://c3NyLTA0LnNzcnN1Yi54eXo6ODg4OTphdXRoX2NoYWluX2E6bm9uZTpwbGFpbjphSFIwY0RvdkwzUXVZMjR2UlVkS1NYbHliQS8_cHJvdG9wYXJhbT1kQzV0WlM5VFUxSlRWVUkmcmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://bjExMC5ib29tLnBhcnR5OjIyMDAwOmF1dGhfYWVzMTI4X3NoYTE6YWVzLTI1Ni1jZmI6aHR0cF9zaW1wbGU6VldzNU1rTlQvP3Byb3RvcGFyYW09T1RRMU9tUjBWRXB5WmcmcmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VTNHJlV2J2UzNrdUlybXRiYyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://bjczLmJvb20ucGFydHk6MTUwMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM2t1SXJtdGJjJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://aW5kLWF3cy51dHVyYm8ueHl6OjQ0MzphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjA6dGxzMS4yX3RpY2tldF9hdXRoOmJXSnNZVzVyTVhCdmNuUS8_b2Jmc3BhcmFtPVkyUnVMbk5vWVhKbGNHOXBiblJ2Ym14cGJtVXVZMjl0JnByb3RvcGFyYW09TXpVMk9ERTZZVGc0T0RnNE9EZzQmcmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VXTnNPVzZwaTNwcWF6bGs0am1pNG5tbHIzbmlibm1pNG5wZ3FZJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://NDYuMTcuNDYuMTAxOjE0NDA1OmF1dGhfYWVzMTI4X21kNTpyYzQtbWQ1OnRsczEuMl90aWNrZXRfYXV0aDpRM05yZHpaay8_b2Jmc3BhcmFtPVptWTFZVEF5TlRZeE5URXViV2xqY205emIyWjBMbU52YlEmcHJvdG9wYXJhbT1NalUyTVRVeE9tMHpTVTVIU2cmcmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VTX2hPZTlsLWFXci1pQmxPbUNwaTFOYjNOamIzYyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://bjA1LmJvb20ucGFydHk6MzAwMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM2t1SXJtdGJjJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTkyLjI0MC4xMjMuMjY6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTM5LjE2Mi4xNS40NTo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWFXc09XS29PV2RvUzAmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTkyLjI0MC45OS4xODI6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNrdlp2bnZaZnBoNHpvdnI3bHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNS4xOTIuMTM1OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTA0LjIzNy4xNTQuMjA0OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://bjI1LmJvb20ucGFydHk6MTUwMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM2t1SXJtdGJjJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://bjEwLmJvb20ucGFydHk6MTAwMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM2t1SXJtdGJjJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://bjM3LmJvb20ucGFydHk6MzMzMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cHJvdG9wYXJhbT1PVFExT21SMFZFcHlaZyZyZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdVM0cmVXYnZTM292cjNscm9FJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC4xNjEuNTQ6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC4xNjEuNTQ6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC45OS4yMTA6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhWHBlYWNyQzFVYjJ0NWJ3Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC45OS4yMTA6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhWHBlYWNyQzFVYjJ0NWJ3Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTM5LjE2Mi4zOC40Mjo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWFXc09XS29PV2RvUzAmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTM5LjE2Mi4zOC40Mjo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWFXc09XS29PV2RvUzAmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://MTcyLjEwNC41MC4xMDI6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNS4xOTIuMTM1OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTkyLjI0MC45OS4xODI6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNrdlp2bnZaZnBoNHpvdnI3bHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://c3NyLTA1LnNzcnN1Yi54eXo6ODg4OTphdXRoX2NoYWluX2E6bm9uZTpwbGFpbjphSFIwY0RvdkwzUXVZMjR2UlVkS1NYbHliQS8_cHJvdG9wYXJhbT1kQzV0WlM5VFUxSlRWVUkmcmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NDUuNzkuOTYuMTA0OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTA0LjIzNy4xNTQuMjA0OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://NDUuNzkuOTYuMTA0OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://NDUuNzkuOTYuMTA0OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://NDUuNzkuOTYuMTA0OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91ZS1qdVdidlMzbGlxRGxpS25ucG9fbHNMemt1cHJsdDU0Jmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://NDUuNzkuOTAuNjY6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NDUuNzkuOTAuNjY6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NDUuNzkuOTAuNjY6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NDUuNzkuOTAuNjY6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VlLWp1V2J2UzNsaXFEbGlLbm5wb19sc0x6a3Vwcmx0NTQmZ3JvdXA9VjFkWExsTlRVbFJQVDB3dVEwOU4
-ssr://NDUuMzMuMTA0LjE2Mjo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTM2xpcURsaUtubnBvX2xzTHprdXBybHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NDUuMzMuMTA0LjE2Mjo4MDk5Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTM2xpcURsaUtubnBvX2xzTHprdXBybHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NDUuMzMuMTA0LjE2Mjo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTM2xpcURsaUtubnBvX2xzTHprdXBybHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://NDUuMzMuMTA0LjE2Mjo4MDk3Om9yaWdpbjphZXMtMjU2LWNmYjpwbGFpbjpaVWxYTUVSdWF6WTVORFUwWlRadVUzZDFjM0IyT1VSdFV6SXdNWFJSTUVRLz9yZW1hcmtzPVUxTlNWRTlQVEY5T2IyUmxPdWUtanVXYnZTM2xpcURsaUtubnBvX2xzTHprdXBybHQ1NCZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNC4xMjcuMjA4OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNC4xMjcuMjA4OjgwOTk6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNC4xMjcuMjA4OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNC4xMjcuMjA4OjgwOTc6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOlpVbFhNRVJ1YXpZNU5EVTBaVFp1VTNkMWMzQjJPVVJ0VXpJd01YUlJNRVEvP3JlbWFya3M9VTFOU1ZFOVBURjlPYjJSbE91YVhwZWFjckMxVWIydDVidyZncm91cD1WMWRYTGxOVFVsUlBUMHd1UTA5Tg
-ssr://MTcyLjEwNC41MC4xMDI6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC41MC4xMDI6ODA5OTpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
-ssr://MTcyLjEwNC41MC4xMDI6ODA5NzpvcmlnaW46YWVzLTI1Ni1jZmI6cGxhaW46WlVsWE1FUnVhelk1TkRVMFpUWnVVM2QxYzNCMk9VUnRVekl3TVhSUk1FUS8_cmVtYXJrcz1VMU5TVkU5UFRGOU9iMlJsT3VhV3NPV0tvT1dkb1MwJmdyb3VwPVYxZFhMbE5UVWxSUFQwd3VRMDlO
+| OSI Layer | Protocol | Description |
+|-----------|----------|-------------|
+| Layer 2 - Data Link | PPTP | Point-to-Point Tunneling Protocol, older, low security |
+| Layer 2 - Data Link | L2TP | Layer 2 Tunneling Protocol, often used with IPsec |
+| Layer 3 - Network | IPsec | Internet Protocol Security, can be used with L2TP or alone |
+| Layer 3 - Network | WireGuard | New efficient VPN protocol, superior performance |
+| Layer 3 - Network | GRE | Generic Routing Encapsulation, can encapsulate various network layer protocols |
+| Layer 4 - Transport | TUIC | TCP over UDP, transport layer protocol based on QUIC |
+| Layer 4 - Transport | Hysteria | High-speed network transport protocol based on QUIC |
+| Layer 4 - Transport | Hysteria2 | Improved version of Hysteria, more efficient and secure |
+| Layer 4 - Transport | QUIC | Quick UDP Internet Connections, developed by Google |
+| Layer 5 - Session | SOCKS4 | Simple firewall traversal protocol, no authentication support |
+| Layer 5 - Session | SOCKS5 | Universal proxy protocol supporting authentication and UDP |
+| Layer 5 - Session | SSL/TLS | Secure Sockets Layer/Transport Layer Security, provides encryption for application layer |
+| Layer 7 - Application | OpenVPN | VPN system using OpenSSL library for encryption |
+| Layer 7 - Application | Shadowsocks | Lightweight encrypted proxy protocol |
+| Layer 7 - Application | ShadowsocksR | Extended version of Shadowsocks, adds features like obfuscation |
+| Layer 7 - Application | VMess | TLS-based encrypted transmission protocol, proposed by V2Ray project |
+| Layer 7 - Application | VLESS | Simplified version of VMess, reduces encryption overhead |
+| Layer 7 - Application | Trojan | Proxy protocol disguising as HTTPS traffic |
+| Layer 7 - Application | Trojan-Go | Go implementation of Trojan protocol, adds features like WebSocket |
+| Layer 7 - Application | HTTP Proxy | Most basic proxy type, usually unencrypted |
+| Layer 7 - Application | HTTPS Proxy | Encrypted HTTP proxy, provides better security |
+| Layer 7 - Application | SSH Tunnel | Creates encrypted tunnels using SSH protocol |
+| Layer 7 - Application | Tor | Anonymous communication network, provides high privacy through multi-layer encryption and relaying |
+| Layer 7 - Application | Naive | HTTPS proxy protocol based on Chromium network stack |
+| Layer 7 - Application | Brook | Simple cross-platform proxy protocol |
+| Layer 7 - Application | Shadowtls | Protocol disguising Shadowsocks traffic as TLS traffic |
+| Layer 7 - Application | Reality | New proxy protocol based on TLS 1.3, provides better anti-detection capability |
+| Layer 7 - Application | WebSocket | Protocol providing full-duplex communication on a single TCP connection |
 
+## ⚠️ Current Challenges
 
-<h1 align="center">We are born free</h1>
+Many one-click VPN clients face the following issues:
+- Connection problems due to blocked domains/IPs
+- Unavailability in app stores
+- Forced payments or time-limited trials
 
-![We are born free](./fightforfree.jpeg)
+## 🔬 Our Mission
 
-#### one-click proxy:Psiphon and lantern(easy to use)
+We are researching long-standing VPN clients to develop a free, reliable cross-platform solution. Our goal is to create an application that provides:
 
+- Permanently free and unlimited use
+- Stable connections
+- Support for all platforms
+- Support for multiple proxy protocols
+- Support for multiple encryption methods
+- Mobile version provides installation and update methods outside official app stores
 
+## ⚖️ Disclaimer
 
-
-
-
-
-
+This project is for educational and research purposes only. Users are responsible for complying with local laws and regulations when using these resources.
